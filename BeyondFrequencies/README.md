@@ -1,6 +1,6 @@
 # Objective
 
-**Following tasks are performed which includes Preprocessing Tweets, calculating TF score, TF-IDF, PMI score and determining entropy of tweets to classify them as spam or non-spam.
+**Following tasks are performed which includes Preprocessing Tweets, calculating TF score, TF-IDF, PMI score and determining entropy of tweets to classify them as spam or non-spam.**
 
 Task1. Find 10 short text-items (20-30 words); they could be emails, short docs, tweets or whatever. Make sure they all deal with some common topic of interest; so they have some of the same words.
 a.Remove the standard stopwords from them using some standard list, use nltk.
