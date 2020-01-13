@@ -1,4 +1,7 @@
-<p><strong>Q1.</strong>&nbsp;Try to get used to using then <strong>nltk </strong>package. Create a text file with, at least, 200</p>
+# Text Pre-Processing 
+<p><strong>Following tasks are performed for Text pre-processing:</strong></p>
+<p><strong><strong>&nbsp;</strong></strong></p>
+<p><strong><strong>Task1.</strong></strong>&nbsp;Try to get used to using then <strong><strong>nltk </strong></strong>package. Create a text file with, at least, 200</p>
 <p>words in it and items that challenge the tokeniser (e.g., I.B.M., and such like</p>
 <p>things). But, you need to make these up yourself, so you think about what it is</p>
 <p>doing.</p>
@@ -30,7 +33,7 @@
 <p>(AI)</p>
 </td>
 <td width="299">
-<p>Punctuation&rsquo;s can be removed initially before applying tokenization</p>
+<p>Punctuations can be removed initially before applying tokenization</p>
 </td>
 </tr>
 <tr>
@@ -41,7 +44,7 @@
 <p>Scored 95</p>
 </td>
 <td width="299">
-<p>Punctuation&rsquo;s can be removed initially before applying tokenization</p>
+<p>Punctuations can be removed initially before applying tokenization</p>
 </td>
 </tr>
 <tr>
@@ -60,13 +63,13 @@
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <ol>
-<li>Now, do normalization on it, and report this output as your answer.</li>
+<li>Now, do normalization on it, and report this output.</li>
 </ol>
-<p><strong><strong>Ans</strong></strong>: For normalization, removed the stop words and changed the case to lower:</p>
+<p>For normalization, removed the stop words and changed the case to lower:</p>
 <p>['good', 'morning', 'mr.', 'singh.i', 'believe', 'data', 'science', ',', 'artificial', 'intelligence', '(', 'ai', ')', 'machine', 'learning', 'going', 'cornerstone', 'shaping', 'future', 'technology', 'industry', '.', 'india', ',', 'u.s.a', ',', 'russia', ',', 'china', 'major', 'countries', 'looking', 'forward', 'work', 'technology', '.', 'the', 'revolution', 'going', 'redefine', 'human-computer', 'interaction', 'future', 'way', ',', 'i', 'wish', 'part', '.', 'i', 'applying', 'master', 'data', 'analytics', 'esteemed', 'university', '.', 'i', 'person', 'always', 'profound', 'passion', 'fascination', 'areas', 'requiring', 'analytical', 'approach', '.', 'right', 'early', 'days', 'school', ',', 'mathematics', 'intrigued', '.', 'i', "scored'95", '100', 'ranked', 'no.1', 'engineering', 'math', 'subject', '.', 'the', 'challenging', 'problems', 'favorites', 'obtaining', 'solutions', 'would', 'leave', 'sheer', 'feeling', 'ecstasy', '.', 'during', 'first', 'two', 'years', 'undergraduate', 'study', ',', 'i', 'studied', 'courses', 'like', 'theory', 'computer', 'science', ',', 'data', 'structure', 'file', 'systems', ',', 'microprocessor', 'based', 'design', ',', 'computer', 'organization', 'systems', 'programming', '.', 'these', 'courses', 'helped', 'gain', 'strong', 'background', 'fundamentals', 'computer', 'science', '.', 'these', 'aptly', 'complemented', 'laboratory', 'courses', '.', 'the', 'challenging', 'assignments', 'part', 'laboratory', 'courses', 'helped', 'develop', 'required', 'technical', 'programming', 'skills', '.', 'during', 'last', 'two', 'years', 'study', ',', 'i', 'took', 'advanced', 'courses', 'like', 'artificial', 'intelligence', ',', 'compiler', 'design', ',', 'databases', ',', 'operating', 'systems', ',', 'computer', 'networks', '.']</p>
 <p>&nbsp;</p>
 <ol>
-<li>Now, take the output from normalization step and run it through a pos-tagger Report this output as your answer and highlight any inaccuracies that occur at this stage.</li>
+<li>Now, take the output from normalization step and run it through a pos-tagger Report this output as and highlight any inaccuracies that occur at this stage.</li>
 </ol>
 <p><strong><strong>Ans:</strong></strong></p>
 <p>[('good', 'JJ'), ('morning', 'NN'), ('mr.', 'NN'), ('singh.i', 'NNP'), ('believe', 'VBP'), ('data', 'NN'), ('science', 'NN'), (',', ','), ('artificial', 'JJ'), ('intelligence', 'NN'), ('(', '('), ('ai', 'NN'), (')', ')'), ('machine', 'NN'), ('learning', 'VBG'), ('going', 'VBG'), ('cornerstone', 'NN'), ('shaping', 'VBG'), ('future', 'JJ'), ('technology', 'NN'), ('industry', 'NN'), ('.', '.'), ('india', 'NN'), (',', ','), <strong><strong>('u.s.a', 'JJ')</strong></strong>, (',', ','), ('russia', 'NN'), (',', ','), ('china', 'VBP'), ('major', 'JJ'), ('countries', 'NNS'), ('looking', 'VBG'), ('forward', 'RB'), ('work', 'NN'), ('technology', 'NN'), ('.', '.'), ('the', 'DT'), ('revolution', 'NN'), ('going', 'VBG'), ('redefine', 'JJ'), ('human-computer', 'JJ'), ('interaction', 'NN'), ('future', 'JJ'), ('way', 'NN'), (',', ','), ('i', 'JJ'), <strong><strong>('wish', 'JJ')</strong></strong>, ('part', 'NN'), ('.', '.'), ('i', 'NN'), ('applying', 'VBG'), ('master', 'NN'), ('data', 'NNS'), ('analytics', 'NNS'), ('esteemed', 'VBD'), ('university', 'NN'), ('.', '.'), ('i', 'JJ'), ('person', 'NN'), ('always', 'RB'), ('profound', 'JJ'), ('passion', 'NN'), ('fascination', 'NN'), ('areas', 'NNS'), ('requiring', 'VBG'), ('analytical', 'JJ'), <strong><strong>('approach', 'NN')</strong></strong>, ('.', '.'), ('right', 'JJ'), ('early', 'JJ'), ('days', 'NNS'), ('school', 'NN'), (',', ','), ('mathematics', 'NNS'), ('intrigued', 'VBD'), ('.', '.'), ('i', 'VB'), ("scored'95", 'VBP'), ('100', 'CD'), ('ranked', 'JJ'), ('no.1', 'JJ'), ('engineering', 'NN'), ('math', 'NN'), ('subject', 'NN'), ('.', '.'), ('the', 'DT'), ('challenging', 'VBG'), ('problems', 'NNS'), ('favorites', 'VBZ'), ('obtaining', 'VBG'), ('solutions', 'NNS'), ('would', 'MD'), ('leave', 'VB'), ('sheer', 'NN'), ('feeling', 'NN'), <strong><strong>('ecstasy', 'NN')</strong></strong>, ('.', '.'), ('during', 'IN'), ('first', 'JJ'), ('two', 'CD'), ('years', 'NNS'), ('undergraduate', 'JJ'), ('study', 'NN'), (',', ','), ('i', 'VB'), ('studied', 'VBN'), ('courses', 'NNS'), ('like', 'IN'), ('theory', 'NN'), ('computer', 'NN'), ('science', 'NN'), (',', ','), ('data', 'NN'), ('structure', 'NN'), ('file', 'NN'), ('systems', 'NNS'), (',', ','), ('microprocessor', 'NN'), ('based', 'VBN'), ('design', 'NN'), (',', ','), ('computer', 'NN'), ('organization', 'NN'), ('systems', 'NNS'), ('programming', 'VBG'), ('.', '.'), ('these', 'DT'), ('courses', 'NNS'), ('helped', 'VBD'), ('gain', 'VB'), ('strong', 'JJ'), ('background', 'NN'), ('fundamentals', 'NNS'), ('computer', 'NN'), ('science', 'NN'), ('.', '.'), ('these', 'DT'), ('aptly', 'RB'), ('complemented', 'VBN'), ('laboratory', 'NN'), ('courses', 'NNS'), ('.', '.'), ('the', 'DT'), ('challenging', 'VBG'), ('assignments', 'NNS'), ('part', 'NN'), ('laboratory', 'NN'), ('courses', 'NNS'), ('helped', 'VBD'), ('develop', 'VB'), ('required', 'JJ'), ('technical', 'JJ'), ('programming', 'NN'), ('skills', 'NNS'), ('.', '.'), ('during', 'IN'), ('last', 'JJ'), ('two', 'CD'), ('years', 'NNS'), ('study', 'VBP'), (',', ','), ('i', 'JJ'), ('took', 'VBD'), ('advanced', 'JJ'), ('courses', 'NNS'), ('like', 'IN'), ('artificial', 'JJ'), ('intelligence', 'NN'), (',', ','), ('compiler', 'NN'), ('design', 'NN'), (',', ','), ('databases', 'NNS'), (',', ','), ('operating', 'VBG'), ('systems', 'NNS'), (',', ','), ('computer', 'NN'), ('networks', 'NNS'), ('.', '.')]</p>
@@ -86,7 +89,7 @@
 <p>('approach', 'NN')</p>
 </td>
 <td width="353">
-<p>Considered as noun but It&rsquo;s a verb</p>
+<p>Considered as a noun but It&rsquo;s a verb</p>
 </td>
 </tr>
 <tr>
@@ -94,7 +97,7 @@
 <p>('wish', 'NN')</p>
 </td>
 <td width="353">
-<p>Considered as noun but It&rsquo;s a verb</p>
+<p>Considered as a noun but It&rsquo;s a verb</p>
 </td>
 </tr>
 <tr>
@@ -117,15 +120,15 @@
 </table>
 <p><strong><strong>&nbsp;</strong></strong></p>
 <p>&nbsp;</p>
-<p><strong><strong>Q2.</strong></strong>&nbsp;Now, take a second, new text-file do the following:</p>
+<p><strong><strong>Task2.</strong></strong>&nbsp;Now, take a second, new text-file do the following:</p>
 <ol>
-<li>Tokenize a new text-file (200 words) and the stem it using Porter Stemming. Report your answer and some of weird things that Porter Stemming does.</li>
+<li>Tokenize a new text-file (200 words) and the stem it using Porter Stemming. Report your answer and some of the weird things that Porter Stemming does.</li>
 </ol>
 <p><strong><strong>Ans: </strong></strong>The article (<em><em>My Biggest Competitive Advantage Is to Look You in the Eye</em></em>,2019) has been used for text extraction.</p>
 <p>After applying porter stemming on the data, following is the output.</p>
 <p>['I', 'have', 'alway', <strong><strong>'believ'</strong></strong>, 'there', 'is', 'magic', 'in', 'face-to-fac', 'human', 'interact', '.', 'As', 'a', 'child', <strong><strong>'struggl'</strong></strong>, 'with', 'undiagnos', 'dyslexia', ',', 'I', 'turn', 'to', 'peopl', 'to', 'learn', 'about', 'the', 'world', '.', 'As', 'a', 'young', 'filmmak', ',', 'I', 'came', 'to', 'find', 'that', 'some', 'of', 'the', 'most', 'emot', 'impact', 'moment', 'in', 'a', 'movi', 'happen', 'when', 'charact', 'meet', 'each', 'other', '&rsquo;', 's', 'gaze', '&mdash;', 'in', 'moment', 'of', 'confront', 'or', 'confess', 'or', 'love', 'at', 'first', 'sight', '.', 'throughout', 'my', 'life', ',', 'I', '&rsquo;', 've', 'learn', 'that', 'such', 'connect', 'are', 'more', 'than', 'just', 'a', 'storytel', 'devic', ';', 'they', 'are', 'the', 'antidot', 'to', 'much', 'of', 'what', 'ail', 'us', '.', 'I', 'have', 'come', 'to', 'believ', 'that', 'our', 'abil', 'to', 'struggl', ',', 'see', 'one', 'anoth', 'better', 'depend', ',', 'quit', 'liter', ',', 'on', 'us', 'see', 'each', 'other', 'at', 'all', '.', 'It', 'turn', 'out', 'that', 'human', 'are', 'hardwir', 'for', '1-to-1', <strong><strong>'commun'</strong></strong>, '.', 'We', 'know', ',', 'for', 'exampl', ',', 'that', 'there', 'are', 'specif', 'cell', 'in', 'our', 'brain', ',', 'known', 'as', '&ldquo;', 'mirror', 'neuron', ',', '&rdquo;', 'that', 'discharg', 'when', 'we', '&rsquo;', 're', 'learn', 'to', 'imit', 'social', 'cue', 'from', 'one', 'anoth', '.', 'studi', 'show', 'that', 'when', 'mother', 'and', 'babi', 'look', 'at', 'each', 'other', ',', 'their', 'brain', 'wave', 'actual', 'sync', 'up', 'and', 'produc', 'oxytocin', ',', 'a', 'chemic', 'often', 'describ', 'as', 'the', '&ldquo;', 'love', 'hormone.', '&rdquo;', 'evolutionari', 'biologist', 'even', 'surmis', 'that', 'the', 'white', 'of', 'our', 'eye', 'evolv', 'so', 'that', 'we', 'could', 'better', 'follow', 'each', 'other', '&rsquo;', 's', 'gaze', '.', 'It', 'is', 'through', 'face-to-fac', 'interact', 'that', 'we', 'develop', 'the', <strong><strong>'essenti'</strong></strong>, 'trait', 'of', 'social', 'be', ':', 'empathi', ',', 'trust', ',', 'and', 'mutual', 'respect', '.', 'and', 'it', '&rsquo;', 's', 'in', 'it', 'absenc', 'that', 'we', 'often', 'see', 'the', 'darker', 'side', 'of', 'human', 'natur', '.', 'there', '&rsquo;', 's', 'a', 'reason', 'whi', 'we', 'have', 'a', 'road', 'rage', 'problem', ',', 'but', 'not', 'a', 'sidewalk', 'rage', 'problem', ',', 'whi', 'internet', 'troll', 'can', 'be', 'so', 'viciou', 'onlin', 'and', 'so', 'meek', 'in', 'real', 'life', '.', 'It', '&rsquo;', 's', 'as', 'though', 'we', 'are', 'more', 'apt', 'to', 'human', 'those', 'we', 'can', 'see', ',', 'and', 'to', 'dehuman', 'those', 'we', 'can', 'not', '.']</p>
 <p>&nbsp;</p>
-<p>There are a lot of oddities that occurs after using Porter stemmer, out of which I have mentioned few in the table below.</p>
+<p>There are a lot of oddities that occur after using Porter stemmer, out of which I have mentioned few in the table below.</p>
 <table>
 <tbody>
 <tr>
@@ -176,6 +179,7 @@
 <li>Tokenize the new text-file and then lemmatize it using WordNet Lemmatizer; note you may have to pos-tag the sentences first and then convert the tags to make this work. Report the result of these steps and point out some of the things that look wrong.</li>
 </ol>
 <p><strong><strong>Ans: </strong></strong>After applying porter stemmer on the new text file, I have converted the tags to simple form so that WordNet Lemmatizer can work. Below function is used to convert the tags.</p>
+<p>&nbsp;</p>
 <p><strong><strong>def convert_big_tags(t):</strong></strong></p>
 <p><strong><strong>&nbsp;&nbsp;&nbsp;&nbsp;if t=='vbd' or t=='vbg' or t=='vbz':</strong></strong></p>
 <p><strong><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'v'</strong></strong></p>
@@ -198,11 +202,11 @@
 <p><strong><strong>Lemmatisation:</strong></strong></p>
 <p>-Gets better roots</p>
 <p>-Deals better with irregular plurals</p>
-<p>-Removes affixes if the output word is present in dictionary</p>
+<p>-Removes affixes if the output word is present in the dictionary</p>
 <p><strong><strong>Porter Stemmer</strong></strong></p>
 <p>-Removes plurals, -ed and -ing suffixes</p>
 <p>-Turns &lsquo;y&rsquo; to &lsquo;i&rsquo; when there is another vowel in the stem</p>
-<p>-Removal of final -e etc.</p>
+<p>-Removal of finale etc.</p>
 <p>&nbsp;</p>
 <p>Below is the comparison table:</p>
 <table>
@@ -272,7 +276,7 @@
 <p><strong><strong>url=r'https://www.syncwithtech.org/member-only-content-free-medium/'</strong></strong></p>
 <p><strong><strong>rawhtml = urllib.request.urlopen(url).read()</strong></strong></p>
 <p>&nbsp;</p>
-<p>Once we had the rawhtml we can parse it using BeautifulSoap as shown in the code below.</p>
+<p>Once we had the raw HTML we can parse it using BeautifulSoap as shown in the code below.</p>
 <p><strong><strong>from bs4 import BeautifulSoup</strong></strong></p>
 <p><strong><strong>soup = BeautifulSoup(rawhtml)</strong></strong></p>
 <p>&nbsp;</p>
@@ -290,8 +294,8 @@
 <p><strong><strong>. . . . .</strong></strong><strong><strong>&nbsp;</strong></strong></p>
 <p><strong><strong>&nbsp;</strong></strong></p>
 <p><strong><strong>References:</strong></strong></p>
-<p>S,Ganapathy.(2018) <em><em>How to Read Medium Member-Only Articles for Free</em></em>. Available at: <a href="https://www.syncwithtech.org/member-only-content-free-medium/"><u>https://www.syncwithtech.org/member-only-content-free-medium/</u></a></p>
+<p>S, Ganapathy.(2018) <em><em>How to Read Medium Member-Only Articles for Free</em></em>. Available at: <a href="https://www.syncwithtech.org/member-only-content-free-medium/"><u>https://www.syncwithtech.org/member-only-content-free-medium/</u></a></p>
 <p>&nbsp;</p>
-<p>Grazer,Brian.(2019)<em><em>My Biggest Competitive Advantage Is to Look You in the Eye</em></em>. Available at: <a href="https://marker.medium.com/my-biggest-competitive-advantage-is-to-look-you-in-the-eye-7ec2dc6ef30d"><u>https://marker.medium.com/my-biggest-competitive-advantage-is-to-look-you-in-the-eye-7ec2dc6ef30d</u></a></p>
+<p>Grazer, Brian. (2019)<em><em>My Biggest Competitive Advantage Is to Look You in the Eye</em></em>. Available at: <a href="https://marker.medium.com/my-biggest-competitive-advantage-is-to-look-you-in-the-eye-7ec2dc6ef30d"><u>https://marker.medium.com/my-biggest-competitive-advantage-is-to-look-you-in-the-eye-7ec2dc6ef30d</u></a></p>
 <p>&nbsp;</p>
 <p>&nbsp;&nbsp;</p>
