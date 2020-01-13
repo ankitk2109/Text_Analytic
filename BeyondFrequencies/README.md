@@ -1,4 +1,6 @@
-# Following tasks are performed which includes Preprocessing Tweets, calculating TF score, TF-IDF, PMI score and determining entropy of tweets to classify them as spam or non-spam.
+# Objective
+
+**Following tasks are performed which includes Preprocessing Tweets, calculating TF score, TF-IDF, PMI score and determining entropy of tweets to classify them as spam or non-spam.
 
 Task1. Find 10 short text-items (20-30 words); they could be emails, short docs, tweets or whatever. Make sure they all deal with some common topic of interest; so they have some of the same words.
 a.Remove the standard stopwords from them using some standard list, use nltk.
@@ -41,9 +43,11 @@ TF-IDF is calculated using
 In the matrix below, left side shows the number of documents and the top column shows the words occuring in each document.
 
 ![image](https://user-images.githubusercontent.com/26432753/72295976-854e3480-3650-11ea-9101-1d9781f81a27.png)
+
 Fig: TF-IDF Matrix
 
 Before creating the word cloud, summation of tf-idf of each columns i.e words are calculated and a dictionary is created. Below is the snippet of the dictionary and tf-idf summation .
+
 ![image](https://user-images.githubusercontent.com/26432753/72296086-baf31d80-3650-11ea-8052-94ebdaac4b62.png)
 
 ![image](https://user-images.githubusercontent.com/26432753/72296107-c9d9d000-3650-11ea-98ae-6228437b1dcd.png)
@@ -59,19 +63,23 @@ List the top-10 pairs based on the PMI scores found for the pairs.
 Do the results make sense? If not, then introduce a minimal cut-off frequency and re-compute the top-10 until they seem sensible.
 
 Ans: Pointwise Mutual Information (PMI) : The main intuition is that it measures how much more likely the words co-occur than if they were independent. formula is given by:
+
 ![image](https://user-images.githubusercontent.com/26432753/72296165-e970f880-3650-11ea-9a2d-0ec7494e3a67.png)
 
 Module required to calculate the PMI in python is nltk.collocations.BigramAssocMeasures()
 Corpus of 10 documents id tokenized and bigrams are found using BigramCollocationFinder.
 The score is produced using bigram_measures.pmi.
 Below is the snippet of bigram with pmi score:
+
 ![image](https://user-images.githubusercontent.com/26432753/72296195-f988d800-3650-11ea-8d96-c36dbc2a78e3.png)
 
 Top 10 pairs based on PMI score:
+
 ![image](https://user-images.githubusercontent.com/26432753/72296235-0d343e80-3651-11ea-83c9-e9c05a9c2fc5.png)
 
 Looking at the result it can be seen that it doesn’t make much sense. The issue with PMI is that it over-estimates the low frequency events because of how it treats counts.
 We can set a frequency filter to narrow down our result. To do so I have used apply_freq_filter(). Below is the output after applying frequency filter=2.
+
 ![image](https://user-images.githubusercontent.com/26432753/72296257-19200080-3651-11ea-9673-4d5eb3bf4fa0.png)
 
 Task3.Entropy has been used to determine whether tweet set is interesting (contains variety) or repetitive
@@ -82,23 +90,29 @@ spam-set, (ii) random-set, (iii) the two sets combined. Report the program you u
 
 Ans: Two sets are created, 
 Twitter Spam set:
+
 ![image](https://user-images.githubusercontent.com/26432753/72296284-2a690d00-3651-11ea-8b8f-bae7856dc1d9.png)
 
 
 Random Set:
+
 ![image](https://user-images.githubusercontent.com/26432753/72296325-3c4ab000-3651-11ea-9d33-38ce92e8a6f3.png)
 
 
 Entropy is defined as the sum of the probability of each label times the log probability of that same label, written as H(A) = -sum(p * log(p), axis=0). It is randomness in words.
 FreqDist calculates the frequency distribution for each token and prob generates the probability of each token and entropy is returned(-sum(p*log(p with base 2))) for every probability [1]
 Below is the function to calculate the entropy.
+
 ![image](https://user-images.githubusercontent.com/26432753/72296356-49679f00-3651-11ea-8432-9f72a83b3a24.png)
 
 i.Entropy is calculated for the spam set is shown below:
+
 ![image](https://user-images.githubusercontent.com/26432753/72296401-600df600-3651-11ea-99af-db6415db84bd.png)
 
 ii.Entropy is calculated for the random set is shown below:
+
 ![image](https://user-images.githubusercontent.com/26432753/72296406-669c6d80-3651-11ea-9ffd-36313f549da6.png)
 
 iii.Combined entropy is shown below:
+
 ![image](https://user-images.githubusercontent.com/26432753/72296424-6e5c1200-3651-11ea-90e8-d52bc9fc65eb.png)
