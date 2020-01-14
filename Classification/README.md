@@ -117,5 +117,3 @@ References:
 1.Krishni, “K-Fold Cross validation ”, 16, December 2018 [Online]. Available: https://medium.com/datadriveninvestor/k-fold-cross-validation-6b8518070833 [Accessed Oct. 26, 2019]
 2.R. Gandhi, “Naive Bayes Classifier ”, 5, May 2018 [Online]. Available: https://towardsdatascience.com/naive-bayes-classifier-81d512f50a7c [Accessed Oct. 26, 2019]
 3.S. Patel, “Chapter 2 : SVM (Support Vector Machine) -Theory”, 3, May 2017 [Online]. Available:https://medium.com/machine-learning-101/chapter-2-svm-support-vector-machine-theory-f0812effc72 [Accessed Oct. 26, 2019]
-
-
