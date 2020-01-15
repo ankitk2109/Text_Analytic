@@ -1,3 +1,3 @@
 # Text Analytic
 
-Text Analtics fuctionalities with examples.
+Text Analytics Mini Projects.
