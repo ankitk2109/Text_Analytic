@@ -88,6 +88,7 @@ i.We can remove the stops words.
 ii.We can try changing the classifier.
 iii.We can change the training and testing size.
 b)Implementation:
+
 i.Removing the stop words:
 
 ![image](https://user-images.githubusercontent.com/26432753/72351732-cee26200-36d8-11ea-92b8-ded123452596.png)
@@ -96,6 +97,7 @@ Since removing the stopwords, the reliability of this system is slightly reduced
 So if the stopwords are removed the meaning shifts and therefore the precision reduces.  The precision for positive decreases whereas recall gets increased. Similarly for the, precision increases with minute difference but the recall gets decreased.
 
 ii.Changing Classifier:
+
 iii.
 
 ![image](https://user-images.githubusercontent.com/26432753/72351765-de61ab00-36d8-11ea-964c-a7cf1968e543.png)
