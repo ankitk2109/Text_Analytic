@@ -1,1 +1,3 @@
-# Text_Analytic
+# Text Analytic
+
+Text Analtics fuctionalities with examples.
