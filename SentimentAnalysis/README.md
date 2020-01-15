@@ -69,7 +69,7 @@ Pearson’s Correlation Coefficient is given by:
 
 As shown above, Pearson correlation for Rater 1 and Rater 2 is 0.0 which signifies that there is no correlation between the them. Rater 1 and Rater 3 have have correlation equals to 0.86, which signifies that there is a positive correlation between these two. Rater 2 and Rater 3 have -0.49 which means there is negative correlation between them.
 
-**Task2.  Based on this simple program that does sentiment analysis. **
+**Task2.  Based on this simple program that does sentiment analysis.**
 
 a)Now considering a ways to improve the training by remove stopwords, changing classifier or increasing training set.
 
