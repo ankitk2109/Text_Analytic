@@ -1,3 +1,3 @@
 # Text Analytic
 
-Text Analytics Mini Projects.
+Text Analytics Mini Projects. Just another edit
